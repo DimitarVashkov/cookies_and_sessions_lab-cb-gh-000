@@ -2,3 +2,8 @@
 <%= text_field_tag :product %>
 <%= submit_tag 'add to cart' %>
  <% end %>
+
+
+<%= @products.each do |product| %>
+<li><%= product %></li>
+<% end %>
