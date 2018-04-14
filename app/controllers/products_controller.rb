@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    current_cart << params[:product]
+    cart << params[:product]
     render :index
   end
 
